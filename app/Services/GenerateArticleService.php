@@ -24,7 +24,7 @@ class GenerateArticleService{
 
     public function generate(){
         $response = Http::get('https://newsapi.org/v2/everything',[
-            'apiKey' => env('API_KEY','514aae5c2fb140dabced996274834bf0'),
+            'apiKey' => env('API_KEY'),
             "domains"=>"bbc.co.uk,techcrunch.com,engadget.com,wsj.com",
             'pageSize' => 20
         ]);
